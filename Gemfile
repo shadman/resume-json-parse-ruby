@@ -37,3 +37,6 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
+
+# Heroku treats logs as streams and requires your logs to be sent to STDOUT.
+gem 'rails_12factor', group: :production
