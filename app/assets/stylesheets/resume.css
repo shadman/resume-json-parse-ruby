@@ -1,0 +1,199 @@
+.resume-template {
+	font-family: arial;
+	font-size: 13px;
+	width: 80%;
+	margin: 0 auto;
+	border: 1px dashed #CFCFCF;
+}
+
+
+.resume-template h2 {
+	font-size: 26px;
+}
+
+.resume-template h3 {
+	color: #666666;
+	padding-left: 20px;
+	font-size: 18px;
+	padding-top: 0px;
+	margin-top: 0px;
+	border-bottom: 1px solid #CFCFCF;
+}
+
+.resume-template h4 {
+	font-size: 18px;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+	margin-top: -10px;
+}
+
+.resume-template .group {
+	border-bottom:0px solid #CFCFCF; 
+	padding: 10px;
+}
+
+.resume-template .justify {
+	text-align: justify;
+}
+
+.resume-template .content {
+	padding-left: 20px;
+}
+
+.resume-template .photo {
+	float: right; 
+	overflow: none; 
+	height:150px; 
+	width: 150px; 
+	margin-top: 5px; 
+	margin-right: 20px;	 
+	text-align: center; 
+	border:1px solid #CFCFCF; 
+	padding:8px;
+}
+
+
+/* Basic Info */
+.resume-template .basic-info {
+	text-align: left; 
+	padding-left: 20px;
+	font-size: 12px;
+}
+
+.resume-template .content-contact { 
+	list-style:none; 
+	margin:0; 
+	padding:0; 
+}
+
+.resume-template .content-contact .small-heading {
+	font-weight: bold;
+}
+
+
+/* Experince */
+.resume-template .content-experience {
+	padding: 0; 
+	margin: 0; 
+	clear: both; 
+	list-style: none; 
+	display:block; 
+	position: relative; 
+	margin-top: 20px;
+}
+
+.resume-template .experience-duration {
+	width: 20%; 
+	float:left; 
+	color: #999999;
+}
+
+.resume-template .experience-description {
+	width: 75%; 
+	float:left; 
+	padding-bottom:20px;
+}
+
+.resume-template .experience-details {
+	display:block; 
+	padding-top:10px;
+}
+
+.resume-template .bold {
+	font-weight: bold;
+}
+
+.resume-template .clear {
+	clear: both;
+}
+
+/* Responsive List */
+.resume-template .responsive-ul {
+	list-style:none;
+	padding:0; 
+	margin:0; 
+	padding-top:10px; 
+	clear:both;
+}
+
+.resume-template .responsive-li {
+	float:left; margin-right: 5px;
+}
+
+.resume-template .responsive-li:first-child {
+	width: 20%;
+}
+
+
+.resume-template .responsive-li .heading {
+	color: #999999;
+}
+
+
+/* Education */
+.resume-template .content-education {
+	padding: 0; 
+	margin: 0; 
+	clear: both; 
+	list-style: none; 
+	display:block; 
+	position: relative; 
+	margin-top: 20px;
+}
+
+.resume-template .education-duration {
+	width: 20%; 
+	float:left; 
+	color: #999999;
+}
+
+.resume-template .education-description {
+	width: 75%; 
+	float:left; 
+	padding-bottom:20px;
+}
+
+.resume-template .education-gpa {
+	display:block; 
+	padding-top:5px;
+}
+
+
+/* Projects */
+.resume-template .content-project {
+	padding: 0; 
+	margin: 0; 
+	clear: both; 
+	list-style: none; 
+	display:block; 
+	position: relative; 
+	margin-top: 20px;
+}
+
+.resume-template .project-heading {
+	width: 20%; 
+	float:left; 
+	color: #999999;
+}
+
+.resume-template .project-description {
+	width: 75%; 
+	float:left; 
+	padding-bottom:20px;
+}
+
+/* Personal Info */
+.resume-template .info-list .responsive-ul {
+	
+}
+
+.resume-template .info-list .responsive-li:nth-child(even) {
+	text-transform: capitalize;
+}
+
+.resume-template .info-list .responsive-li:nth-child(odd) {
+	clear:both; 
+	width: 20%;
+	color: #999999;
+}

@@ -1,0 +1,49 @@
+
+
+body {
+	font-family: arial;
+}
+
+.resume-parser {
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.input-json {
+	width:99%; 
+	height:300px;
+	margin-bottom:10px;
+}
+
+.sample-json {
+	border:1px solid #DCDCDC; 
+	background-color:#FCFCFC; 
+	border-style: dashed; 
+	color:#333; 
+	padding:20px; 
+	font-size:10px;
+	overflow: auto;
+}
+
+.generate-btn {
+	float:right;
+	background-color: green;
+	color: #FFF;
+	border:1px solid #000;
+	padding: 5px 10px;
+}
+
+.copy-btn {
+	background-color: #CFCFCF;
+	color: #000;
+	border:1px solid #000;
+	padding: 5px 10px;
+}
+
+.message {
+	padding-left: 10px;
+	color: red;
+	font-weight: bold;
+	font-size: 14px;
+}

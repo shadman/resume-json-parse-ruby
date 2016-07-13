@@ -10,7 +10,9 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require clipboard.min
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require scripts
 //= require_tree .
