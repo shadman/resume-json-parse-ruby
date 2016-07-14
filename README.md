@@ -16,7 +16,7 @@ https://resume-json-parse-ruby.herokuapp.com/
 - Need to clone/copy all code from repository on your Ruby project directory.
 - No need for any kind of database.
 - Install RVM and Ruby by given commands below (if needed; otherwise install only gems. steps defined in 'Ruby setup with RVM')
-- Run with puma server. (Steps define in 'Run Project via Puma')
+- Run with puma server. (Steps defined in 'Run Project via Puma')
 - After successful deployment and server run, you may access via http://localhost:3000.
 - Cheers.
 
