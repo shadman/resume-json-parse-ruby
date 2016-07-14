@@ -15,10 +15,9 @@ https://resume-json-parse-ruby.herokuapp.com/
 - Create a directory for your Ruby Projects
 - Need to clone/copy all code from repository on your Ruby project directory.
 - No need for any kind of database.
-- Install RVM and Ruby by given commands below (if needed; otherwise install only gems)
-- Run with puma server or can run in webrick 
-- On puma server deployment, you may access via http://localhost:5000.
-- On webrick server deployment, you may access via http://localhost:3000.
+- Install RVM and Ruby by given commands below (if needed; otherwise install only gems. steps defined in 'Ruby setup with RVM')
+- Run with puma server. (Steps define in 'Run Project via Puma')
+- After successful deployment and server run, you may access via http://localhost:3000.
 - Cheers.
 
 ## Sample JSON:
@@ -63,3 +62,9 @@ https://resume-json-parse-ruby.herokuapp.com/
 ## Installing your bundles from Gemfile
 
 	bundle install 
+
+
+# Run Project via Puma
+
+	rails s
+
