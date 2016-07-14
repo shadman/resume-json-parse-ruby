@@ -26,7 +26,6 @@ https://resume-json-parse-ruby.herokuapp.com/
 
 --------------
 
-
 # Ruby setup with RVM
 
 ## Installing stable RVM First
@@ -67,4 +66,3 @@ https://resume-json-parse-ruby.herokuapp.com/
 # Run Project via Puma
 
 	rails s
-
