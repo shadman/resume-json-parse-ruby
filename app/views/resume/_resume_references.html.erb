@@ -1,0 +1,21 @@
+<% unless data.empty? %>
+	<div class="group">
+		<h3>References</h3>
+		<div class="content">
+
+			<% data.each do |reference| -%>
+				<ul class="responsive-ul">
+					<li class="responsive-li">
+						<span class="bold"><%= reference['full_name'] %> </span>
+						<% unless reference['designation'].empty? %><span>, <%= reference['designation'] %></span><% end %>
+						<div>
+							<%= reference['email'] %>; <%= reference['phone'] %>
+						</div>
+					</li>
+				</ul>
+			<% end %>
+
+		<br class="clear" />
+		</div>
+	</div>
+<% end %>
