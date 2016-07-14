@@ -1,0 +1,13 @@
+<% unless data.empty? %>
+	<div class="group">
+		<h3>Achievements</h3>
+		<div class="content">
+			<% data.each do |achievement| -%>
+				<ul class="responsive-ul">
+					<li><%= achievement %></li>
+				</ul>
+			<% end %>
+		</div>
+		<br class="clear" />
+	</div>
+<% end %>

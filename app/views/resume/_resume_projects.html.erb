@@ -1,0 +1,20 @@
+<% unless data.empty? %>
+	<div class="group">
+		<h3>Projects</h3>
+		<div class="content">
+			<% data.each do |project| -%>
+				<ul class="content-project">
+					<li class="project-heading">
+						<span><%= project['year'] %></span>
+					</li>
+					<li class="project-description">
+						<div class="bold"><%= project['headline'] %></div>
+						<% unless project['url'].empty? %><div><%= project['url'] %></div><% end %>
+						<% unless project['description'].empty? %><div><%= project['description'] %></div><% end %>
+					</li>
+				</ul>
+			<% end %>
+		<br class="clear" />
+		</div>
+	</div>
+<% end %>

@@ -1,0 +1,14 @@
+<% unless data.empty? %>
+	<div class="group">
+		<h3>Skills</h3>
+		<div class="content">
+			<% data.each do |skill| -%>
+				<ul class="responsive-ul">
+					<li class="responsive-li"><span class="bold heading"><%= skill['category'] %></span></li>
+					<li class="responsive-li"> <%= skill['items'].join(', ') %></li>
+				</ul>
+			<% end %>
+		<br class="clear" />
+		</div>
+	</div>
+<% end %>
