@@ -1,8 +1,7 @@
 class ResumeController < ApplicationController
 
-  def index
-  	@cool = 'Shadman'
-  	
+  def index  	
+    
   	render :form
   end
 
