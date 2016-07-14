@@ -1,0 +1,49 @@
+<% unless data.empty? %>
+	<div class="group">
+		<div class="photo">
+			<img src="<%= data['picture'] %>" alt="150 x 150" width="150" height="150">
+		</div>
+
+		<div class="basic-info">
+			<h2><%= data['first_name'] %> <%= data['last_name'] %></h2>
+			<h4 class="title-text"><%= data['title'] %></h4>
+
+			<ul class="content-contact">
+				<% unless data['location'].empty? %>
+				<li>
+					<span class="small-heading">Address:</span> 
+					<% data['location'].each do |key, value| -%>
+						<% unless value.empty? -%>
+							<span><%= value %>,</span>
+						<% end %>	
+					<% end %>
+				</li>
+				<% end %>
+				
+				<% unless data['email'].empty? %>
+					<li><span class="small-heading">Email:</span> <%= data['email'] %></li> 
+				<% end %>
+
+				<% unless data['phone'].empty? %>
+					<li><span class="small-heading">Phone:</span> <%= data['phone'] %></li>
+				<% end %>
+
+				<% unless data['cell_phone'].empty? %> 
+					<li><span class="small-heading">Mobile:</span> <%= data['cell_phone'] %></li> 
+				<% end %>
+
+				<% unless data['website'].empty? %>
+					<li><span class="small-heading">Website:</span> <%= data['website'] %></li>
+				<% end %>
+
+				<% unless data['linkedin_url'].empty? %> 
+					<li><span class="small-heading">LinkedIn:</span> <a href="<%= data['linkedin_url'] %>" target="_blank"><%= data['linkedin_url'] %></a></li> 
+				<% end %>
+
+				<% unless data['git_url'].empty? %>
+					<li><span class="small-heading">Git:</span> <a href="<%= data['git_url'] %>" target="_blank"><%= data['git_url'] %></a></li> 
+				<% end %>
+			</ul>
+		</div>
+	</div>
+<% end %>

@@ -1,0 +1,48 @@
+<% unless data.empty? %>
+	<div class="group">
+		<h3>Education</h3>
+		  <div class="content">
+			  <ul class="content-education">
+
+				<% data.each do |record| -%>
+
+				  	<li class="education-duration">
+				  		<span>
+				  			<%= record['from_year'] %> - <%= record['to_year'] ? record['to_year'] : 'In-progress' %>
+				  		</span>
+				  	</li>
+				  	
+				  	<li class="education-description">
+				  		<span class="bold"><%= record['degree'] %></span>
+				  		<% unless record['major'].empty? %>
+				  			<span class="bold"> in <%= record['major'] %></span><br />
+				  		<% end %>
+				  		
+				  		<% unless record['institution'].empty? %>
+				  			<span><%= record['institution'] %></span>
+				  		<% end %>
+				  		
+				  		<% unless record['location'].empty? %>
+				  			<span>, <%= record['location'] %></span>
+				  		<% end %>
+						
+						<% unless record['gpa'].nil? %> 
+							<span class="education-gpa">
+								<span class="bold">GPA:</span> <%= record['gpa'] %>
+							</span>
+						<% end %>
+
+						<% unless record['percentage'].nil? %> 
+							<span class="education-gpa">
+								<span class="bold">Percentage:</span> <%= record['percentage'] %>
+							</span>
+						<% end %>
+				  	</li>
+
+			  	<% end %>
+
+			  </ul>
+			  <br class="clear" />
+		  </div>
+	</div>
+<% end %>

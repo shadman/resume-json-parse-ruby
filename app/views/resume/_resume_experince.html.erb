@@ -1,0 +1,29 @@
+<% unless data.empty? %>
+<div class="group">
+	<h3>Experince</h3>
+	  <div class="content">
+		  <ul class="content-experience">
+
+			<% data.each do |work| -%>
+
+			  	<li class="experience-duration">
+			  		<span><%= work['from'] %> - <%= work['to'] ? work['to'] : 'Present' %></span>
+			  	</li>
+			  	<li class="experience-description">
+			  		<span class="bold"><%= work['title'] %></span>
+			  		<span ng-if="work.company">, <%= work['company'] %></span> 
+			  		<span ng-if="work.location">, <%= work['location'] %></span> 
+					<ul class="experience-details">
+						<% work['details'].each do |points| -%>
+						<li><%= points %></li>
+						<% end %>
+					</ul>
+			  	</li>
+
+		  	<% end %>
+
+		  </ul>
+		  <br class="clear" />
+	  </div>
+</div>
+<% end %>
