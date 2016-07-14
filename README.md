@@ -23,7 +23,7 @@ https://resume-json-parse-ruby.herokuapp.com/
 ## Sample JSON:
 - Sample json file is here 'app/views/resume/_sample.json.erb' (please don't delete or edit).
 
-## Same application can find with AngularJS Here:
+## Same application also developed in AngularJS here:
 ###LIVE: 
 https://resume-json-parser.herokuapp.com/
 ###GIT REPO: 
