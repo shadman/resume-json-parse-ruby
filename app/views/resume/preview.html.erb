@@ -1,4 +1,21 @@
-<div class="resume-parser">
+<div class="resume-template">
 
-	<%= @cool %>
+	<%= render partial: "resume_basic_info", locals: { data: @resume['basic_information'] } %>
+	<%= render partial: "resume_summary.html", locals: { data: @resume['basic_information'] } %>
+
+	<%= render partial: "resume_education.html", locals: { data: @resume['education'] } %>
+
+	<%= render partial: "resume_experince.html", locals: { data: @resume['experience'] } %>
+	<%= render partial: "resume_skills.html", locals: { data: @resume['skills'] } %>
+
+	<%= render partial: "resume_achievements.html", locals: { data: @resume['achievements'] } %>
+	<%= render partial: "resume_projects.html", locals: { data: @resume['projects'] } %>
+
+	<%= render partial: "resume_extra_curriculars.html", locals: { data: @resume['extra_curriculars'] } %>
+	<%= render partial: "resume_interest_hobbies.html", locals: { data: @resume['interest_hobbies'] } %>
+
+	<%= render partial: "resume_personal_info.html", locals: { data: @resume['personal_info'] } %>
+
+	<%= render partial: "resume_references.html", locals: { data: @resume['references'] } %>
+
 </div>
