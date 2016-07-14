@@ -1,2 +1,65 @@
-# resume-json-parse-ruby
-Post JSON to Generate Your Resume
+# Resume JSON Parse with Ruby on Rails
+
+## Live URL:
+https://resume-json-parse-ruby.herokuapp.com/
+
+
+## Specifications:
+- Developed in Ruby 2.2 with Rails.
+- Paste your Resume JSON as input in required format, then press 'Generate Resume' button to get display results.
+- Have placed a sample Resume JSON in main page right after input area (fore demo).
+- Have added a 'Copy Sample Resume' button, by that we can easily copy our sample Resume JSON to paste on input area.
+- Tested with Firefox and Chrome.
+
+## Deployment Steps:
+- Create a directory for your Ruby Projects
+- Need to clone/copy all code from repository on your Ruby project directory.
+- No need for any kind of database.
+- Install RVM and Ruby by given commands below (if needed; otherwise install only gems)
+- Run with puma server or can run in webrick 
+- On puma server deployment, you may access via http://localhost:5000.
+- On webrick server deployment, you may access via http://localhost:3000.
+- Cheers.
+
+## Sample JSON:
+- sample json file is here 'app/views/resume/_sample.json.erb' (please don't delete or edit).
+
+
+--------------
+
+
+# Ruby setup with RVM
+
+## Installing stable RVM First
+
+	gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+	\curl -sSL https://get.rvm.io | bash -s stable --rails
+
+## Source your RVM scripts
+
+	source ~/.rvm/scripts/rvm
+	
+## Installing stable Ruby 2.2 via RVM
+
+	curl -sSL https://get.rvm.io | bash -s stable --ruby
+	rvm install 2.2
+
+## Using installed Ruby version and setting it as default
+
+	rvm use 2.2 --default
+
+## Show you a list of installed Ruby versions
+
+	rvm list
+
+## Run intall Rails gem command on your created project directory
+
+	gem install rails
+
+## Installing bundler for Bundle Install
+
+	gem install bundler
+
+## Installing your bundles from Gemfile
+
+	bundle install 
