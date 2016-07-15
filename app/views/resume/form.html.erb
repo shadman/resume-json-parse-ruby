@@ -1,6 +1,6 @@
 <div class="resume-parser">
 
-	<%= form_tag({controller: "resume", action: "parse"}, method: "post", class: "json-form") %>
+	<%= form_tag({controller: "resume", action: "parse"}, method: "post", class: "json-form") do %>
 
 	    <h3>Paste Your Resume JSON Here:</h3> 
 	    <%= text_area_tag(:resumejson, '', placeholder: "Paste your Resume JSON here; you may also try below sample json for full results.", class: "input-json", id: "resume-json" ) %> <br />
@@ -13,6 +13,6 @@
 	    <h3>Example Resume JSON:</h3>
 	    <pre class="sample-json" id="sample-json"><%= render partial: 'sample.json' %></pre>
 
-	</form>
+	<% end %>
 
 </div>
