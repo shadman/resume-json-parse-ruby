@@ -12,8 +12,8 @@ https://resume-json-parse-ruby.herokuapp.com/
 - Tested with Firefox and Chrome.
 
 ## Deployment Steps:
-- Create a directory for your Ruby Projects
-- Need to clone/copy all code from repository on your Ruby project directory.
+- Create a directory for your Ruby Projects,
+- Need to clone/copy all code from repository on your created Ruby project directory.
 - No need for any kind of database.
 - Install RVM and Ruby by given commands below (if needed; otherwise install only gems. steps defined in 'Ruby setup with RVM')
 - Run with puma server. (Steps defined in 'Run Project via Puma')
@@ -45,11 +45,11 @@ https://github.com/shadman/resume-json-parser-angular
 ## Installing stable Ruby 2.2 via RVM
 
 	curl -sSL https://get.rvm.io | bash -s stable --ruby
-	rvm install 2.2
+	rvm install ruby-2.2
 
 ## Using installed Ruby version and setting it as default
 
-	rvm use 2.2 --default
+	rvm use ruby-2.2 --default
 
 ## Show you a list of installed Ruby versions
 
@@ -67,7 +67,9 @@ https://github.com/shadman/resume-json-parser-angular
 
 	bundle install 
 
-
 # Run Project via Puma
 
 	rails s
+
+
+Cheers !
